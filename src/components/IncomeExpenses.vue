@@ -1,24 +1,17 @@
 <script setup>
-    import {defineProps} from 'vue'
+    import { defineProps } from 'vue';
 
-    const props = defineProps ({
+    const props = defineProps({
         income: {
             type: Number,
-            require: true,
+            Required: true,
         },
         expense:{
             type: Number,
-            require: true,
+            Required: true,
         }
-
-
-
     })
-
-
-
 </script>
-
 <template>
     <div class="inc-exp-container">
         <div>
@@ -27,9 +20,7 @@
         </div>
         <div>
             <h4>Expense</h4>
-            <p id="money-minus" class="money minus">+${{ expense }}</p>
+            <p id="money-minus" class="money minus">-${{ expense }}</p>
         </div>
     </div>
-
-
 </template>
